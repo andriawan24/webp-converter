@@ -1,7 +1,4 @@
-import typer
-
-def main(name: str):
-    print(f"Hello, {name}!")
+from src import cli, __app_name__, __version__
 
 if __name__ == "__main__":
-    typer.run(main)
+    cli.app(prog_name=__app_name__)
