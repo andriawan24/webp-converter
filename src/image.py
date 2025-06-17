@@ -43,7 +43,6 @@ def convert_image(file_path: str, output_dir: str, quality: int = 80):
 
     try:
         image.save(final_path, **save_kwargs)
-        print(f"Successfully converted {input_path.name} to WebP")
         return final_path
     finally:
         image.close()
